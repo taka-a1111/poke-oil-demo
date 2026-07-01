@@ -51,6 +51,82 @@
   .sec-intro .grpB{display:flex;flex-direction:column;align-items:center;gap:4.615cqw;width:100%;} /* gap60 */
   .sec-intro .wordmark{width:59.25%;height:auto;display:block;} /* 234/400 */
   .sec-intro .product{width:100%;height:auto;display:block;border-radius:2px;}
+
+  /* ============ PRODUCT (navy) ============ */
+  .sec-product{position:relative;width:100%;aspect-ratio:1300/660;
+    background:url('img/mesh_product.jpg') center/100% 100% no-repeat;}
+  .np{position:absolute;left:34.615%;top:0;width:30.769%;height:100%;
+    background:linear-gradient(105deg,#4f3049 0%,#4a2f4a 34%,#33456d 66%,#264f73 100%);
+    display:flex;flex-direction:column;align-items:center;}
+  .np-title{display:flex;align-items:center;justify-content:center;gap:1.0cqw;margin-top:4.3cqw;}
+  .np-title .sl{display:flex;gap:.26cqw;}
+  .np-title .sl i{display:block;width:.3cqw;height:1.75cqw;transform:skewX(-18deg);border-radius:.12cqw;}
+  .np-title .sl i:nth-child(1){background:#38bfe9;} .np-title .sl i:nth-child(2){background:#ff8f86;}
+  .np-title h2{font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:2.15cqw;letter-spacing:.28cqw;}
+  .np-sub{font-family:'Noto Sans JP';font-weight:500;color:#e9ecf2;font-size:.95cqw;letter-spacing:.15cqw;margin-top:1.05cqw;}
+  .np-cards{display:flex;justify-content:center;gap:.3cqw;width:90%;margin-top:2.0cqw;}
+  .pcard{flex:1;background:#fff;border-radius:.6cqw;overflow:hidden;padding-bottom:1.15cqw;
+    box-shadow:0 .4cqw 1.2cqw rgba(20,20,50,.18);}
+  .pcard .ph{width:100%;aspect-ratio:178/166;overflow:hidden;background:#f3f5f7;}
+  .pcard .ph img{width:100%;height:100%;object-fit:cover;display:block;}
+  .pcard .pn{font-family:'Montserrat',sans-serif;font-weight:600;color:#2b2b2b;font-size:1.3077cqw;letter-spacing:.065cqw;text-align:center;margin-top:.9cqw;}
+  .pcard .pill{position:relative;height:1.308cqw;margin:.55cqw 8% 0;border-radius:.15cqw;}
+  .pcard.sa .pill{background:#b2e4f3;} .pcard.to .pill{background:#ffccc7;}
+  .pcard .pill span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Noto Sans JP';font-weight:400;color:#363636;font-size:.77cqw;letter-spacing:.077cqw;}
+  .pcard .price{text-align:center;margin-top:.75cqw;color:#2b2b2b;font-family:'Montserrat';font-weight:600;letter-spacing:.04cqw;}
+  .pcard .price .yen{font-size:.9cqw;} .pcard .price .num{font-size:1.23cqw;}
+  .pcard .price .tax{font-family:'Noto Sans JP';font-weight:400;font-size:.75cqw;}
+  .pcard .buy{margin:.85cqw 8% 0;height:2.5cqw;border-radius:50px;display:flex;align-items:center;justify-content:center;gap:.5cqw;
+    font-family:'Noto Sans JP';font-weight:600;color:#fff;font-size:.9cqw;text-decoration:none;}
+  .pcard.sa .buy{background:linear-gradient(75.6deg,#00ace7 7.78%,#04a696 100%);}
+  .pcard.to .buy{background:linear-gradient(76.28deg,#ff507c 1.15%,#ff6e6c 100%);}
+  .pcard .buy svg{width:.85cqw;height:.85cqw;}
+  .np-rel{font-family:'Noto Sans JP';font-weight:500;color:#eef0f5;font-size:.95cqw;letter-spacing:.12cqw;margin-top:2.4cqw;}
+  .np-smini{display:block;width:90%;margin-top:1.05cqw;border-radius:.5cqw;overflow:hidden;box-shadow:0 .3cqw 1cqw rgba(10,10,40,.25);}
+  .np-smini img{width:100%;height:auto;display:block;}
+
+  /* ============ 成分 (INGREDIENTS) ============ */
+  .sec-seibun{position:relative;width:100%;aspect-ratio:1300/1856;
+    background:url('img/mesh_seibun.jpg') center/100% 100% no-repeat;}
+  .sec-seibun .col{position:relative;width:30.769%;margin:0 auto;display:flex;flex-direction:column;align-items:center;}
+  .sb-hero{width:100%;display:block;}
+  .sb-tags{display:flex;gap:4%;width:100%;margin-top:1.35cqw;}
+  .sb-tag{position:relative;flex:1;text-align:center;color:#fff;font-family:'Noto Sans JP';font-weight:600;font-size:.92cqw;padding:.55cqw 0;border-radius:.45cqw;letter-spacing:.02cqw;}
+  .sb-tag.blue{background:#5fbad6;} .sb-tag.red{background:#f5836f;}
+  .sb-tag::after{content:"";position:absolute;left:50%;bottom:-.46cqw;transform:translateX(-50%);border:.5cqw solid transparent;border-bottom:0;}
+  .sb-tag.blue::after{border-top-color:#5fbad6;} .sb-tag.red::after{border-top-color:#f5836f;}
+  .sb-collage{width:100%;margin-top:1.05cqw;border-radius:.45cqw;display:block;}
+  .sb-body{width:100%;margin-top:2.3cqw;color:#42606f;font-family:'Hiragino Sans','Noto Sans JP';font-weight:500;font-size:1.02cqw;line-height:1.95;}
+  .sb-chev{margin-top:1.7cqw;width:3.3cqw;height:auto;display:block;}
+  .sb-h3{margin-top:1.5cqw;font-family:'Noto Sans JP';font-style:italic;font-weight:700;font-size:1.95cqw;letter-spacing:.04cqw;
+    background:linear-gradient(90deg,#37a8dd 0%,#6f8ed6 52%,#f2879a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .ing-card{position:relative;width:100%;margin-top:1.2cqw;background:#fff;border-radius:.75cqw;padding:1.25cqw 1.35cqw 1.2cqw;box-shadow:0 .35cqw 1.1cqw rgba(60,90,120,.12);}
+  .ing-photo{position:absolute;top:1.25cqw;right:1.35cqw;width:8.7cqw;aspect-ratio:114/126;border-radius:.45cqw;overflow:hidden;}
+  .ing-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .ing-head{display:flex;align-items:center;gap:.85cqw;padding-right:9.8cqw;min-height:2.7cqw;}
+  .ing-badge{flex:none;width:2.65cqw;height:2.65cqw;border-radius:50%;background:linear-gradient(135deg,#5ec6ea 0%,#c6a6da 55%,#f4a9b0 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Montserrat';font-weight:600;font-size:1.02cqw;}
+  .ing-nt{flex:1;}
+  .ing-formula{color:#8ba1ae;font-family:'Noto Sans JP';font-weight:500;font-size:.72cqw;line-height:1.2;margin-bottom:.05cqw;}
+  .ing-name{color:#28a7d6;font-family:'Noto Sans JP';font-weight:700;font-size:1.33cqw;line-height:1.18;}
+  .ing-body{padding-right:9.8cqw;margin-top:.85cqw;padding-top:.85cqw;border-top:1px dashed #d5dee4;
+    color:#4a4a4a;font-family:'Hiragino Sans','Noto Sans JP';font-weight:500;font-size:.96cqw;line-height:1.72;}
+  .ing-ft{display:flex;margin-top:1.0cqw;background:#f1f4f6;border-radius:.45cqw;padding:.75cqw 0;}
+  .ing-ft .it{flex:1;display:flex;align-items:center;justify-content:center;gap:.45cqw;padding:0 .5cqw;color:#3f3f3f;font-family:'Noto Sans JP';font-weight:500;font-size:.82cqw;line-height:1.35;text-align:left;}
+  .ing-ft .it+.it{border-left:1px dashed #cdd6dc;}
+  .ing-ft .it svg{flex:none;width:1.15cqw;height:1.15cqw;color:#39a8dd;}
+
+  /* ============ HiPO ============ */
+  .sec-hipo{position:relative;width:100%;aspect-ratio:1300/552;
+    background:url('img/mesh_hipo.jpg') center/100% 100% no-repeat;overflow:hidden;}
+  .hipo-chev{position:absolute;left:50%;top:1.3cqw;transform:translateX(-50%);width:3.3cqw;}
+  .hipo-pl{position:absolute;left:35.7%;top:4.7cqw;width:5.4cqw;border-radius:.3cqw;transform:rotate(-9deg);box-shadow:0 .25cqw .9cqw rgba(0,0,0,.18);}
+  .hipo-pr{position:absolute;right:35.5%;top:3.7cqw;width:5.5cqw;border-radius:.3cqw;transform:rotate(8deg);box-shadow:0 .25cqw .9cqw rgba(0,0,0,.18);}
+  .hipo-h{position:absolute;left:0;right:0;top:10.4cqw;text-align:center;color:#fff;
+    font-family:'Noto Sans JP';font-weight:700;font-size:2.5cqw;line-height:1.5;letter-spacing:.05cqw;}
+  .hipo-h .u{display:inline-block;border-bottom:.2cqw solid #fff;padding-bottom:.1cqw;line-height:1.05;}
+  .hipo-h .y{color:#ffe24a;}
+  .hipo-body{position:absolute;left:0;right:0;top:28.8cqw;text-align:center;color:#fff;
+    font-family:'Hiragino Sans','Noto Sans JP';font-weight:600;font-size:1.42cqw;line-height:1.85;padding:0 17%;}
 </style>
 </head>
 <body>
@@ -101,6 +177,103 @@
         <img class="product" src="img/intro_product.jpg" alt="PoKe Oil さらり・とろり">
       </div>
     </div>
+  </section>
+
+  <!-- ========== PRODUCT ========== -->
+  <section class="sec-product" id="product">
+    <div class="np">
+      <div class="np-title">
+        <span class="sl l"><i></i><i></i></span>
+        <h2>PRODUCT</h2>
+        <span class="sl r"><i></i><i></i></span>
+      </div>
+      <div class="np-sub">商品一覧</div>
+      <div class="np-cards">
+        <div class="pcard sa">
+          <div class="ph"><img src="img/pcard_sarari.jpg" alt="PoKe Oil さらり"></div>
+          <div class="pn">PoKe Oil</div>
+          <div class="pill"><span>さらり</span></div>
+          <div class="price"><span class="yen">￥</span><span class="num">3,850</span><span class="tax">（税込）</span></div>
+          <a class="buy" href="#product">購入する<svg viewBox="0 0 12 12" fill="none"><path d="M2 6h7M6.5 3l3 3-3 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="pcard to">
+          <div class="ph"><img src="img/pcard_torori.jpg" alt="PoKe Oil とろり"></div>
+          <div class="pn">PoKe Oil</div>
+          <div class="pill"><span>とろり</span></div>
+          <div class="price"><span class="yen">￥</span><span class="num">3,850</span><span class="tax">（税込）</span></div>
+          <a class="buy" href="#product">購入する<svg viewBox="0 0 12 12" fill="none"><path d="M2 6h7M6.5 3l3 3-3 3" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="np-rel">関連商品</div>
+      <a class="np-smini" href="#product"><img src="img/smartmini.png" alt="Smart Mini｜コードレスポケットヘアアイロン ヘアアイロンとセットでいつでも美髪へ。"></a>
+    </div>
+  </section>
+
+  <!-- ========== 成分 (INGREDIENTS) ========== -->
+  <section class="sec-seibun">
+    <div class="col">
+      <img class="sb-hero" src="img/seibun_hero.jpg" alt="熱を味方に、髪を補修し土台を整える成分配合">
+      <div class="sb-tags">
+        <span class="sb-tag blue">3種のヒートケア成分</span>
+        <span class="sb-tag red">植物オイル・保湿成分</span>
+      </div>
+      <img class="sb-collage" src="img/seibun_collage.jpg" alt="ヒートケア成分と植物オイル・保湿成分">
+      <p class="sb-body">3種類の厳選されたヒートケア成分に、髪とのなじみがよい植物オイルと保湿成分をバランスよく配合。これにより、熱を味方にして髪を補修しヘアセットをアシストする独自のヒートブーストシステム「ハイポ〈HiPO〉」が生まれました。</p>
+      <svg class="sb-chev" viewBox="0 0 60 26" fill="none"><path d="M4 4L30 22L56 4" stroke="url(#chv)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="chv" x1="0" y1="0" x2="60" y2="0"><stop stop-color="#4bb0dd"/><stop offset="1" stop-color="#f2879a"/></linearGradient></defs></svg>
+      <h3 class="sb-h3">3種のヒートケア成分</h3>
+
+      <div class="ing-card">
+        <div class="ing-photo"><img src="img/ing_copoly.jpg" alt="アブラナ・シナアブラギリ由来コポリマー"></div>
+        <div class="ing-head">
+          <div class="ing-badge">01</div>
+          <div class="ing-nt">
+            <div class="ing-formula">(アブラナ種子油/シナアブラギリ種子油)</div>
+            <div class="ing-name">コポリマー</div>
+          </div>
+        </div>
+        <div class="ing-body">熱が加わることで髪の強度を高め、最大24時間乾燥による縮れ等を抑制する働きがあります。</div>
+        <div class="ing-ft">
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>髪型キープアシスト</div>
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>ケア性能</div>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-photo"><img src="img/ing_poly29.jpg" alt="ポリシリコーン-29"></div>
+        <div class="ing-head">
+          <div class="ing-badge">02</div>
+          <div class="ing-nt"><div class="ing-name">ポリシリコーン-29</div></div>
+        </div>
+        <div class="ing-body">熱により髪表面に密着し保護膜を形成し、なめらかでまとまりある仕上がりへ導きます。</div>
+        <div class="ing-ft">
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>髪にまとまりを出す</div>
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>熱に反応して毛髪を補修・保護</div>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-photo"><img src="img/ing_meadow.jpg" alt="メドウフォームーδーラクトン"></div>
+        <div class="ing-head">
+          <div class="ing-badge">03</div>
+          <div class="ing-nt"><div class="ing-name">メドウフォームーδーラクトン</div></div>
+        </div>
+        <div class="ing-body">熱で髪のたんぱく質と結合し、内部から補修します。ダメージ毛を艶やかに整える成分です。</div>
+        <div class="ing-ft">
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>髪環境を整え滑らかさアップ</div>
+          <div class="it"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M6 10.2l2.6 2.6L14.2 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>熱で補修力を高める</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== HiPO ========== -->
+  <section class="sec-hipo">
+    <svg class="hipo-chev" viewBox="0 0 60 26" fill="none"><path d="M4 4L30 22L56 4" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <img class="hipo-pl" src="img/hipo_pl.jpg" alt="">
+    <img class="hipo-pr" src="img/hipo_pr.jpg" alt="">
+    <h2 class="hipo-h">独自の<br><span class="u">ヒートブーストシステム</span><br><span class="y">「HiPO」</span>を実現</h2>
+    <p class="hipo-body">これらの成分により、熱を味方にして髪を補修しヘアセットをアシストする独自の「ヒートブーストシステム〈HiPO〉」が生まれました。</p>
   </section>
 
 </div>
