@@ -8,45 +8,48 @@
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   html,body{overflow-x:hidden;}
-  body{min-height:100vh;
-    background:
-      radial-gradient(55% 42% at 12% 7%, #8fd0e6 0%, rgba(143,208,230,0) 55%),
-      radial-gradient(78% 60% at 90% 60%, #ef7168 0%, rgba(239,113,104,0) 62%),
-      radial-gradient(48% 30% at 52% 100%, #efe7cf 0%, rgba(239,231,207,0) 60%),
-      linear-gradient(150deg,#7cc3dc 0%, #a7b3c8 40%, #e07d76 74%, #f0a48f 100%);
-    background-attachment:fixed;}
-  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-    background-image:url('img/grain.png');background-size:200px;background-repeat:repeat;
-    mix-blend-mode:soft-light;opacity:.7;}
+  body{position:relative;min-height:100vh;background-color:#e08a80;
+    font-family:'Hiragino Sans','Noto Sans JP',sans-serif;}
+
+  /* ===== 背景（Figma実アセット：Rectangle 45=ヒーロー / Rectangle 46=以降リピート） ===== */
+  .bg{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none;}
+  .bg .b{position:absolute;left:0;right:0;}
+  .bg .b-hero{top:0;height:780px;
+    background:url('img/bg_hero.jpg') top center/2600px 780px no-repeat,
+               linear-gradient(90deg,#7bc1d9 0 50%,#ea8a80 50% 100%);}
+  .bg .b-main{top:780px;bottom:0;
+    background:url('img/bg_a.jpg') top center/2600px 780px repeat-y,
+               linear-gradient(90deg,#81c7e1 0 50%,#eb7f76 50% 100%);}
+
   .sp{position:relative;z-index:1;max-width:400px;margin:0 auto;background:#fff;
-    box-shadow:0 0 60px rgba(0,0,0,.12);}
+    box-shadow:0 0 50px rgba(0,0,0,.05);}
   .sp img{display:block;width:100%;height:auto;}
   #product{position:absolute;top:14.7677%;left:0;width:1px;height:1px;}
   .hit{position:absolute;display:block;z-index:5;
     /* background:rgba(255,0,0,.35); */ }
 
-  /* ===== PC-only hero side header (shown on wide screens) ===== */
+  /* ===== PC専用ヒーロー左右ヘッダー（Figma Frame 233準拠） ===== */
   .pc-header{display:none;}
   @media (min-width:1040px){
-    .pc-header{display:block;position:absolute;top:0;left:0;width:100%;height:700px;z-index:1;pointer-events:none;
+    .pc-header{display:block;position:absolute;top:0;left:0;width:100%;height:780px;z-index:2;pointer-events:none;
       font-family:'Hiragino Sans','Noto Sans JP',sans-serif;}
-    .pc-header .side{position:absolute;top:0;height:700px;display:flex;align-items:center;justify-content:center;}
+    .pc-header .side{position:absolute;top:0;height:780px;display:flex;align-items:center;justify-content:center;}
     .pc-header .left{left:0;width:calc((100% - 400px)/2);}
     .pc-header .right{right:0;width:calc((100% - 400px)/2);}
-    .pc-header .wordmark{width:217px;height:auto;display:block;}
+    .pc-header .wordmark{width:217px;height:42px;display:block;}
     .pc-header .cards{display:flex;gap:25px;align-items:flex-start;pointer-events:auto;}
-    .pc-card{display:flex;flex-direction:column;align-items:center;gap:13px;width:150px;}
-    .pc-card .bwrap{height:150px;display:flex;align-items:flex-end;justify-content:center;}
-    .pc-card .bwrap img{height:150px;width:auto;display:block;}
-    .pc-card .nm{font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;color:#fff;letter-spacing:.85px;line-height:1.5;}
-    .pc-card .pill{position:relative;width:150px;height:17px;display:flex;align-items:center;justify-content:center;}
+    .pc-card{display:flex;flex-direction:column;align-items:center;width:150px;}
+    .pc-card .bwrap{height:144px;display:flex;align-items:flex-end;justify-content:center;}
+    .pc-card .bwrap img{height:144px;width:auto;display:block;}
+    .pc-card .nm{margin-top:15px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:17px;line-height:12px;color:#fff;letter-spacing:.85px;}
+    .pc-card .pill{position:relative;margin-top:8px;width:150px;height:17px;display:flex;align-items:center;justify-content:center;}
     .pc-card .pill i{position:absolute;inset:0;opacity:.85;}
     .pc-card.sarari .pill i{background:#b2e4f3;} .pc-card.torori .pill i{background:#ffccc7;}
     .pc-card .pill span{position:relative;font-weight:400;font-size:10px;color:#363636;letter-spacing:1px;}
-    .pc-card .price{font-family:'Montserrat',sans-serif;font-weight:600;color:#fff;letter-spacing:.75px;line-height:1.5;}
+    .pc-card .price{margin-top:13px;font-family:'Montserrat',sans-serif;font-weight:600;color:#fff;letter-spacing:.75px;line-height:11px;}
     .pc-card .price .y{font-size:11px;} .pc-card .price .n{font-size:15px;}
     .pc-card .price .t{font-family:'Hiragino Sans','Noto Sans JP';font-weight:400;font-size:10px;letter-spacing:1px;}
-    .pc-card .buy{width:150px;height:35px;border-radius:50px;display:flex;align-items:center;justify-content:center;gap:10px;
+    .pc-card .buy{margin-top:13px;width:150px;height:35px;border-radius:50px;display:flex;align-items:center;justify-content:center;gap:10px;
       color:#fff;font-weight:600;font-size:12px;text-decoration:none;box-shadow:0 4px 22px rgba(239,228,209,.6);}
     .pc-card.sarari .buy{background:linear-gradient(75.6deg,#00ace7 7.8%,#04a696 100%);}
     .pc-card.torori .buy{background:linear-gradient(76.3deg,#ff507c 1.2%,#ff6e6c 100%);}
@@ -56,6 +59,11 @@
 </style>
 </head>
 <body>
+  <div class="bg" aria-hidden="true">
+    <div class="b b-hero"></div>
+    <div class="b b-main"></div>
+  </div>
+
   <div class="pc-header">
     <div class="side left">
       <img class="wordmark" src="img/pc_wordmark.svg" alt="PoKe Oil">
